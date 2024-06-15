@@ -65,7 +65,7 @@ const ToDoList = () => {
       case 'completed':
         return tasks.filter(task => task.completed);
       case 'pending':
-        return tasks.filter(task => !task.completed && !task.critical); // Only show pending and non-critical tasks
+        return tasks.filter(task => !task.completed); // Show all non-completed tasks
       case 'critical':
         return tasks.filter(task => task.critical);
       default:
